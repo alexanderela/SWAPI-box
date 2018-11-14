@@ -86,7 +86,7 @@ render() {
 		      name="people"
 		      onClick={this.handlePeopleClick}
 		    >
-		    	<NavLink to="/people" className="nav">People</NavLink>
+		    	<NavLink to={process.env.PUBLIC_URL + "/people"} className="nav">People</NavLink>
 		    </button>
 		    <button 
 		      className={`cat-button planets-button 
@@ -96,7 +96,7 @@ render() {
 		      name="planets"
 		      onClick={this.handlePlanetClick}
 		    >
-		    	<NavLink to="/planets" className="nav">Planets</NavLink>
+		    	<NavLink to={process.env.PUBLIC_URL + "/planets"} className="nav">Planets</NavLink>
 		    </button>
 		    <button 
 		      className={`cat-button vehicles-button 
@@ -106,7 +106,7 @@ render() {
 		      name="vehicles"
 		      onClick={this.handleVehicleClick}
 		    >
-		    	<NavLink to="/vehicles" className="nav">Vehicles</NavLink>
+		    	<NavLink to={process.env.PUBLIC_URL + "/vehicles"} className="nav">Vehicles</NavLink>
 		    </button>
 		    <FavoriteButton 
 		    	className="FavoriteButton"

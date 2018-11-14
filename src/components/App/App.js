@@ -200,10 +200,10 @@ class App extends Component {
           />
           : <div className="error-popup-placeholder"></div>
         }
-        <Route exact path="/" render={(props) => <Sidebar {...props} films={films} />}
+        <Route exact path={process.env.PUBLIC_URL + "/"} render={(props) => <Sidebar {...props} films={films} />}
         />
         <Route 
-          exact path="/people" 
+          exact path={process.env.PUBLIC_URL + "/people"} 
           render={(props) => <CardContainer {...props} 
             entries={people} 
             toggleFavorites={this.toggleFavorites} 
@@ -211,7 +211,7 @@ class App extends Component {
           />}
         />
         <Route 
-          exact path="/vehicles" 
+          exact path={process.env.PUBLIC_URL + "/vehicles"} 
           render={(props) => <CardContainer {...props} 
             entries={vehicles} 
             toggleFavorites={this.toggleFavorites} 
@@ -219,7 +219,7 @@ class App extends Component {
           />}
         />
         <Route 
-          exact path="/planets" 
+          exact path={process.env.PUBLIC_URL + "/planets"} 
           render={(props) => <CardContainer {...props} 
             entries={planets} 
             toggleFavorites={this.toggleFavorites} 
@@ -227,7 +227,7 @@ class App extends Component {
           />}
         />
         <Route 
-          exact path="/favorites" 
+          exact path={process.env.PUBLIC_URL + "/favorites"} 
           render={(props) => <CardContainer {...props} 
             entries={favorites} 
             toggleFavorites={this.toggleFavorites} 
