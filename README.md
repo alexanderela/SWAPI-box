@@ -35,7 +35,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Other technologies used:
 - React.js
 - React Router
-- Redux
 
 Tested with:
 - Jest
